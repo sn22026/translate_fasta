@@ -9,6 +9,7 @@ This project can:
 
 Repository structure:
 - assessment_biopython.py: biopython script to translate FASTA files
+- folders A, B, C, D: contain reference sequences from BASH to be translated
 - folder, c:/Users/lolaf/OneDrive/Desktop/Masters/Intro to bioinformatics/Assessment/A: contains the input and output files
 - allfiles.fasta: the input file containing multiple FASTA files
 - translated.fas: the output file containing translated ORFs
