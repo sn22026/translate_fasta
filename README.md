@@ -14,5 +14,5 @@ Repository structure:
 - translated.fas: the output file containing translated ORFs
 
 Installation and usage instructions:
-[Install python](https://www.python.org/downloads/)
-Install Biopython using "pip install biopython" in the python terminal.
+1. [Install python](https://www.python.org/downloads/)
+2. Install Biopython using "pip install biopython" in the python terminal.
