@@ -1,14 +1,29 @@
-# translate_fasta
-## Converts fragmented FASTQ files into concatenated FASTA files, then translates them. 
-This project was built to assimilate fragmented FASTQ samples into FASTA files in Git Bash, then the output was moved to python to translate the longest ORF found in a FASTA file in order to prepare it for multiple sequence alignment. 
+# FASTQ to Translated ORF Pipeline
+A bioinformatics pipeline for processing fragmented FASTQ sequencing data into translated amino acid sequences, ready for downstream multiple sequence alignment and phylogenetic analysis.
+Built as part of an MSc Bioinformatics project. The pipeline converts and concatenates raw sequencing reads, identifies the longest open reading frame (ORF) in each assembly, and translates it to an amino acid sequence for use in phylogenetic workflows.
 
-This project can:
+What this pipeline does
 
-1. Convert FASTQ files to FASTA files
-2. Concatenate fragmented FASTA files
-3. Identify the longest ORF
-4. Translate the longest ORF
-5. Output the resulting amino acid sequence
+Converts FASTQ files to FASTA format
+Concatenates fragmented FASTA files into a single file
+Identifies the longest ORF in the concatenated sequence
+Translates the ORF to an amino acid sequence
+Outputs the resulting amino acid sequence for downstream analysis
+
+Requirements
+
+Git Bash
+Python 3.x
+Biopython (pip install biopython)
+
+Usage
+# Step 1: Convert and concatenate FASTQ files
+bash fastq_to_fasta.sh
+bash concatenate.sh
+
+# Step 2: Translate the longest ORF
+python assessment_biopython.py allfiles.fasta
+Output will be written to translated.fas.
 
 Repository structure:
 - fastq_to_fasta.sh: shell converting FASTQ files to FASTA files
